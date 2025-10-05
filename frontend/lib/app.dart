@@ -4,6 +4,8 @@ import 'screens/welcome_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/category_selection_screen.dart';
 import 'screens/order_description_screen.dart';
+import 'screens/pvz_selection_screen.dart';
+import 'screens/order_confirmation_screen.dart';
 
 class App extends ConsumerWidget {
   const App({super.key});
@@ -22,7 +24,8 @@ class App extends ConsumerWidget {
         '/login': (context) => const LoginScreen(),
         '/category-selection': (context) => const CategorySelectionScreen(),
         '/order-description': (context) => const OrderDescriptionScreen(),
-        // Добавьте остальные маршруты
+        '/pvz-selection': (context) => const PvzSelectionScreen(),
+        '/order-confirmation': (context) => const OrderConfirmationScreen(),
       },
     );
   }
